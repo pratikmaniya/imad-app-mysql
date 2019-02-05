@@ -1,0 +1,95 @@
+body{
+	font-family: sans-serif;
+}
+
+.title{
+	margin-top: 30px;
+	color: #509040;
+	font-size: 35px;
+	font-weight: 700;
+	text-align: center;
+	font-family: sans-serif;
+	text-decoration: none;
+}
+
+.outer{
+	border: 1px solid #509040;
+	border-radius: 5px;	
+	width: 400px;
+	margin: 40px auto 0 auto;
+	background-color: rgba(80,900,50,0.4);
+	padding-bottom: 30px;
+}
+
+input{
+	width: 90%;
+	height: 30px;
+	border: 1px solid #509040;
+	border-radius: 3px;
+}
+
+h4{
+	color: #509040;
+	text-align: center;
+	font-size: 25px;
+}
+
+.form{
+	font-size: 12px;
+	font-weight: 700;
+    padding: 8px;
+}
+
+#label{
+	font-size: 12px;
+	font-weight: 700;
+    margin-left: 5%;
+}
+
+.outer .signin{
+    width: 25%;
+	font-size: 17px;
+	color: #509040;
+	text-decoration: none;
+	border: 1px solid #509040;
+	border-radius: 4px;
+	padding: 5px 10px;
+	background-color: transparent;
+}
+
+.signin:hover{
+	color: white;
+	background-color: #509040;
+	cursor: pointer;
+}
+
+.register{
+	width: 90%;
+	font-size: 17px;
+	color: #509040;
+	text-decoration: none;
+	border: 1px solid #509040;
+	border-radius: 4px;
+	padding: 5px 60px;
+	background-color: transparent;
+}
+
+.register:hover{
+	color: white;
+	background-color: #509040;
+	cursor: pointer;
+}
+
+.copyright{
+	font-size: 14px;
+	text-align: center;
+	color: #509040;
+}
+
+hr{
+	width: 400px;
+	border: 0;
+	height: 1px;
+	background-image: linear-gradient(to right, rgba(0,0,0,0.1), rgba(0,0,0,2), rgba(0,0,0,0.1));
+}
+

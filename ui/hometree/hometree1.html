@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="/ui/hometree/hometree1.css">	
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<title>Online Gardening - Home Tree</title>
+		<link rel="icon" href="/ui/hometree/33.ico" type="image/x-icon">
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#flip").click(function(){
+                    $("#panel").slideToggle("slow");
+                    $("#flip").css("outline", "none");
+                });
+            });
+        </script>
+        <script>
+            function signinbtn () {
+                var request = new XMLHttpRequest();
+                request.onreadystatechange = function () {
+                    if (request.status === 200) {
+                        document.getElementById('userlogin').innerHTML = `<a href="/logout">Sign out</a>`;
+                    }
+                    else{
+                        document.getElementById('userlogin').innerHTML = `<a href="/ui/hometree/signin.html">Sign in</a>`;    
+                    }
+                };
+            
+                request.open('GET', '/check-login', true);
+                request.send(null);
+            }
+            signinbtn();
+        </script>
+	</head>
+	<div class="header">
+	  <header class="container">
+		<h1 class="col-sm-4">Home Tree</h1>
+		  <ul>
+			<li style="background-color:white;border:none;" id="search"><input type="text" placeholder="search.."><a href="#search"><img src="https://cdn2.iconfinder.com/data/icons/media-and-navigation-buttons-round/512/Button_15-128.png"></a></li>
+		  <div class="dropdown">
+		    <button class="dropbtn" id="flip">Menu &#9660; </button>
+		    <div class="dropdown-content" id="panel">
+			  <li id="plant"><a href="#plant">Plant</a></li>
+			  <li><a href="#garden">Garden</a></li>
+			  <li><a href="#gardener">Gardener</a></li>
+			  <li><a href="#contact">Contact us</a></li>
+			  <li id="userlogin"></li>
+		    </div>
+		  </div>
+		  </ul>
+   	  </header>
+	</div>
+	<section class="jumbotron">
+	  <div class="container">
+		<div class="row text-center">
+		  <h3 class="page-description">Online Gardening - Home Tree</h3>
+		  <h3 class="slogan"><i>" The best time to plant a tree is just now "</i></h3>
+		</div>
+	  </div>
+	</section>
+	<div class="trendplant">
+	<section>
+	  <div class="container">
+		<div class="row text-left">
+			<p id="trend">Plants in Trends</p>
+		</div>
+	  </div>
+	</section>
+	<section class="container">
+	  <div class="row">
+		<figure class="col-sm-3">
+		  <div class="gallery">
+			<a class="btn btn-btnprimary" href="#buy">view details</a>
+		  </div>
+		</figure>
+		<figure class="col-sm-3">
+		  <div class="gallery">
+			<a class="btn btn-btnprimary" href="#buy">view details</a>
+		  </div>
+		</figure>
+		<figure class="col-sm-3">
+		  <div class="gallery">
+			<a class="btn btn-btnprimary" href="#buy">view details</a>
+		  </div>
+		</figure>
+		<figure class="col-sm-3">
+		  <div class="gallery">
+			<a class="btn btn-btnprimary" href="#buy">view details</a>
+		  </div>		 
+		 </figure>
+	  </div>
+	</section>
+	</div>
+	<footer class="container">
+    <div class="row">
+      <p class="col-sm-4"><b>&copy;2017 Home Tree, All Rights Reserved.</b></p>
+      <ul class="col-sm-8">
+        <li><a href="https://www.facebook.com/pratikmaniya244" target="_blank" class="fa fa-facebook"></a></li>
+        <li><a href="https://www.instagram.com/mr_maniya244" target="_blank" class="fa fa-instagram"></a></li>
+        <li><a href="https://twitter.com/pratik_maniya" target="_blank" class="fa fa-twitter"></a></li>
+        <li id="lastbutton"><a href="https://www.linkedin.com/in/pratikmaniya" target="_blank" class="fa fa-linkedin"></a></li>
+      </ul>
+    </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,102 @@
+body{
+	font-family: sans-serif;
+}
+
+.head{
+	text-decoration: none;
+	margin-top: 30px;
+	font-size: 35px;
+	color: #509040;
+	font-weight: 700;
+}
+
+.infield{
+    padding: 0 5px;
+    width: 90%;
+}
+
+div{
+	border: 1px solid #509040;
+	border-radius: 5px;	
+	width: 400px;
+	margin: 20px auto 0 auto;
+	background-color: rgba(80,900,50,0.4);
+}
+
+h4{
+	color: #509040;
+	text-align: center;
+	font-size: 25px;
+}
+
+p{
+	font-size: 12px;
+	font-weight: 700;
+	margin-left: 20px;
+}
+
+input{
+	height: 30px;
+	border: 1px solid #509040;
+	border-radius: 3px;
+}
+
+select{
+	border-radius: 3px;
+	border: 1px solid #509040;
+	background-color: transparent;
+}
+
+.mobno{
+	margin-left: 20px;
+	display: flex;
+	margin-right: 20px;
+}
+
+.register{
+	font-size: 17px;
+	color: #509040;
+	text-decoration: none;
+	border: 1px solid #509040;
+	border-radius: 3px; 
+	padding: 5px 10px;
+	background-color: transparent;
+}
+
+.register:hover{
+	color: white;
+	background-color: #509040;
+	cursor: pointer;
+}
+
+.backlink{
+	text-decoration: none;
+}
+
+h3{
+	font-size: 13px;
+	font-weight: 500;
+	margin-left: 20px;
+	
+}
+
+hr{
+	margin-top: 20px;
+	width: 400px;
+	border: 0;
+	height: 1px;
+	background-image: linear-gradient(to right, rgba(0,0,0,0.1), rgba(0,0,0,2), rgba(0,0,0,0.1));
+}
+
+h2{
+	margin-top: 20px;
+	font-size: 14px;
+	text-align: center;
+}
+
+h5{
+	margin-top: 15px;
+	font-size: 14px;
+	text-align: center;
+	color: #509040;
+}
